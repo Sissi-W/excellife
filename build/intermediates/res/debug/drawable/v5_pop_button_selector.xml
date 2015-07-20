@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_pressed="true" android:drawable="@drawable/v5_pop_button_pre" />
+    <item android:drawable="@drawable/v5_pop_button_nor" />
+</selector><!-- From: file:/Users/wangqianqian/A_Code/Android/android_studio/omni/ResHello/res/drawable/v5_pop_button_selector.xml -->

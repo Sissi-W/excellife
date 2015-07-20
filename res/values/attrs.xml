@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GridLifeView">
+        <attr name="model" format="integer"/>
+            <!--<enum name="AGE_INPUT" value="0"></enum>-->
+            <!--<enum name="STAGE_INPUT" value="1"></enum>-->
+        <attr name="age" format="integer"/>
+        <attr name="month" format="integer"/>
+        <attr name="beginMonth" format="integer"/>
+        <attr name="color" format="integer"/>
+    </declare-styleable>
+</resources>

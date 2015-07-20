@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ScrollView
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="人生其实只有900个月，而你可以用一张A4纸画一个30X30的表格，每过一个月你可以在小格子里打钩，你的全部人生就会在这一张白纸上。"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="如果你是20岁的年轻人，你的人生状态是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:id="@+id/first_life_view1"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="20"
+                app:color="@color/yellow"
+                app:model="0"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:id="@+id/first_life_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="如果你在24岁和你的女朋友／男朋友谈了一场6个月的恋爱，他在这张纸上是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:id="@+id/first_life_view2"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="24"
+                app:color="@color/royalblue"
+                app:model="1"
+                app:month="6"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:id="@+id/first_life_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="如果你是正在看我们应用30上下的上班狗，你的人生就是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:id="@+id/first_life_view3"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="30"
+                app:color="@color/chocolate"
+                app:model="0"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:id="@+id/first_life_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="假如你在29岁有了孩子，在孩子上幼儿园前，你能和他朝夕相处的日子是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:id="@+id/first_life_view4"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="29"
+                app:color="@color/lightskyblue"
+                app:model="1"
+                app:month="36"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:id="@+id/first_life_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="你将持续为之操心，直到他考上大学，那么花费的精力是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:id="@+id/first_life_view5"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="32"
+                app:color="@color/blueviolet"
+                app:model="1"
+                app:month="180"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="再假设我们的父母平均50岁的话，他们的人生是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="50"
+                app:color="@color/darkorange"
+                app:model="0"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="假如你们天天见面，你能陪伴他们的时间是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:age="50"
+                app:color="@color/magenta"
+                app:model="1"
+                app:month="300"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="假如你们一个月见两次面，你能陪伴他们的时间就是这样的"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:beginMonth="880"
+                app:color="@color/violet"
+                app:model="2"
+                app:month="20"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="假如你们一见一次面，就会是这样"></TextView>
+
+            <com.example.reshello.view.GridLifeView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                app:beginMonth="899"
+                app:color="@color/red"
+                app:model="2"
+                app:month="1"></com.example.reshello.view.GridLifeView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="很有趣的观点，不是么?试着画画你的人生A4纸吧，看看剩下的空白还有多少。"></TextView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/add_button"
+        android:background="@drawable/home_add_button"/>
+</RelativeLayout>

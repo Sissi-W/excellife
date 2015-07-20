@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全屏弹出带一个dialog框，背景为黑色70%不透明 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/v5_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/v5_dialog_can"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/v5_popup_bg"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/v5_dialog_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/v5_dialog_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/v5_dialog_close"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/auto_complete_icon_clear" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/v5_button_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:padding="15dp"
+            android:scrollbars="none"
+            android:singleLine="false"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/v5_button_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/v5_dialog_custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/v5_dialog_custom_default_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auto_complete_icon_txt_bg"
+                android:digits="0123456789xX#"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLength="18"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/v5_dialog_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/v5_dialog_button1"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/v5_pop_button_selector"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/v5_dialog_button2"
+                android:layout_width="105dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/v5_pop_button_selector"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
